@@ -1,6 +1,6 @@
 # HTML-PDF Service - λ
 
-POC: A lambda-like function should be able to create a PDF file with dynamic data.
+POC: A lambda-like function should be able to create a PDF file by injecting data into an HTML template.
 
 This uses `puppeteer` to create the PDF file based on an HTML template, which uses `ejs` to handle dynamic data injections.
 
