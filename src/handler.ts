@@ -3,6 +3,7 @@ import ejs from "ejs";
 import { join } from "path";
 import puppeteer from "puppeteer";
 import { PDFServiceRequest } from "./types";
+import crypto from "crypto";
 
 export async function handler(
   event: PDFServiceRequest.IEvent,
@@ -34,7 +35,9 @@ export async function handler(
      */
     path: join(
       __dirname,
-      `../.temp/${Math.round(new Date().getTime() / 1000)}_${template}.pdf`
+      `../.temp/${Math.round(new Date().getTime() / 1000)}-${template}_${
+        crypto.randomUUID().split("-")[0]
+      }.pdf`
     ),
     margin: { top: "100px", right: "50px", bottom: "100px", left: "50px" },
     printBackground: true,
