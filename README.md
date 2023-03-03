@@ -62,7 +62,7 @@ Loading images from files is not supported. They need to be loaded in Base64 enc
 />
 ```
 
-The above snippet loads the following image.
+The above snippet loads the following image into the HTML file.
 
 ![Hobitton Door](./templates/assets/hobbiton-logo.png)
 
