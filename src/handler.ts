@@ -32,7 +32,10 @@ export async function handler(
     /**
      * TODO: Remove `path` before deploying.
      */
-    path: join(__dirname, `../.temp/${template}.pdf`),
+    path: join(
+      __dirname,
+      `../.temp/${Math.round(new Date().getTime() / 1000)}_${template}.pdf`
+    ),
     margin: { top: "100px", right: "50px", bottom: "100px", left: "50px" },
     printBackground: true,
     format: "A4",
