@@ -1,0 +1,21 @@
+{
+  "name": "lambda-pdf-service",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "ts-node src/index.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aws-lambda": "^1.0.7"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.111",
+    "@types/node": "^18.14.4",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.5"
+  }
+}
