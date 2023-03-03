@@ -1,5 +1,5 @@
 {
-  "name": "lambda-pdf-service",
+  "name": "lambda-html-pdf-service",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",

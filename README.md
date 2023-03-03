@@ -1,4 +1,4 @@
-# HTML-PDF Converter
+# HTML-PDF Service - λ
 
 POC: A lambda-like function should be able to create a PDF file with dynamic data.
 
