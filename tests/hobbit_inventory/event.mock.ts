@@ -1,4 +1,4 @@
-import { PDFServiceRequest } from "../types";
+import { PDFServiceRequest } from "../../src/types";
 
 export const event: PDFServiceRequest.IEvent = {
   template: "hobbit_inventory",

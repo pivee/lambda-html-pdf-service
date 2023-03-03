@@ -1,5 +1,5 @@
-import { handler } from "./handler";
-import { event } from "./.mocks/event.mock";
+import { handler } from "../../src/handler";
+import { event } from "./event.mock";
 import * as fs from "fs";
 import { join } from "path";
 
@@ -8,7 +8,7 @@ import { join } from "path";
   try {
     result = await handler(event, {} as any);
 
-    fs.writeFileSync(join(__dirname, "../.temp/result"), result.data);
+    fs.writeFileSync(join(__dirname, "../../.temp/result"), result.data);
 
     console.log(result);
   } catch (error) {
