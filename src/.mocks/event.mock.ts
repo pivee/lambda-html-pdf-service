@@ -1,10 +1,10 @@
 import { PDFServiceRequest } from "../types";
 
 export const event: PDFServiceRequest.IEvent = {
-  template: "HOBBIT_INVENTORY",
+  template: "hobbit_inventory",
   payload: {
     name: "Frodo Baggins",
-    address: "Bag's end, Hobbiton, The Shire",
+    address: "Bag End, Hobbiton, The Shire",
     options: {
       ring: true,
       sting: true,

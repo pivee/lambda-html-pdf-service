@@ -4,5 +4,11 @@ export namespace PDFServiceRequest {
     payload: any;
   }
 
-  type Template = "HOBBIT_INVENTORY";
+  type Template = "hobbit_inventory";
+
+  interface ISuccessResponse {
+    data: string; // File as a Base64 encoded string
+    mimeType: "application/pdf";
+    extension: ".pdf";
+  }
 }
