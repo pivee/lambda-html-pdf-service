@@ -31,7 +31,7 @@ export async function handler(
   // Download the PDF
   const pdf = await page.pdf({
     /**
-     * TODO: Remove `path` before deploying.
+     * NOTE: Remove `path` to prevent creating a file in storage.
      */
     path: join(
       __dirname,
